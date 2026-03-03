@@ -1,0 +1,149 @@
+:root {
+  --primary-text: #434455;
+  --title-text: #2e2f42;
+  --accent: #4d5ae5;
+  --accent-hover: #404bbf;
+  --light: #f4f4fd;
+  --white: #fff;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  color: var(--primary-text);
+  background-color: var(--white);
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.logo {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+.logo-part {
+  color: var(--title-text);
+}
+.nav-link {
+  font-weight: 500;
+  line-height: 1.5;
+  color: var(--title-text);
+}
+
+.contacts-link {
+  line-height: 1.5;
+  color: var(--primary-text);
+}
+
+.contacts {
+  font-style: normal;
+}
+
+.nav-link:hover,
+.nav-link:focus,
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--accent-hover);
+}
+
+.hero-section {
+  background-color: var(--title-text);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  letter-spacing: 0.02em;
+  line-height: 1.07;
+  text-align: center;
+  color: var(--white);
+}
+
+.hero-button {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white);
+  background-color: var(--accent);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--accent-hover);
+}
+
+
+.features-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text);
+}
+
+.features-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.team {
+  background-color: var(--light);
+}
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  color: var(--title-text);
+}
+.team-item {
+    background-color:var(--white) ;
+}
+.team-name {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: var(--title-text);
+}
+.team-role {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.portfolio-subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--title-text);
+}
+
+.portfolio-type {
+  line-height: 1.5;
+}
+.page-footer {
+  background-color: var(--title-text);
+}
+.footer-logo .logo-part {
+  color: var(--light);
+}
+.footer-text {
+  line-height: 1.5;
+  color: var(--light);
+}
