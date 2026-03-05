@@ -53,9 +53,7 @@ img {
 .section {
   padding: 120px 0;
 }
-.section-title {
-  margin: 0 auto 72px;
-}
+
 .subtitle {
   font-weight: 500;
   font-size: 20px;
@@ -179,13 +177,13 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  border-radius: 4px;
   color: var(--white);
   background-color: var(--accent);
   cursor: pointer;
   padding: 16px 32px;
   min-width: 169px;
   border: none;
+  border-radius: 4px;
 }
 
 .hero-button:hover,
@@ -229,6 +227,7 @@ img {
   text-transform: capitalize;
   text-align: center;
   color: var(--title-text);
+  margin: 0 auto 72px;
 }
 
 .team-item {
@@ -236,7 +235,13 @@ img {
   width: calc(
     (100% - var(--indent-x) * (var(--team-item) - 1)) / var(--team-item)
   );
+}
+.team-list {
+  display: flex;
   gap: 24px;
+}
+.team-item:first-child {
+  border-radius: 0px 0px 4px 4px;
 }
 .team-item .card-bottom {
   padding: 32px 0;
@@ -250,7 +255,12 @@ img {
 
 /* #endregion team */
 /* #region portfolio */
-
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--indent-x);
+  row-gap: 48px; /* точна вимога для вертикальних відступів */
+}
 .portfolio-subtitle {
   font-weight: 700;
   font-size: 20px;
